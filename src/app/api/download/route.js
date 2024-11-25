@@ -12,7 +12,7 @@ export const GET = (req) => {
       return new Response("Invalid file parameter.", { status: 400 });
     }
 
-    const basePath = path.resolve("./public/files/publik"); 
+    const basePath = path.resolve("./public/files/rahasia"); 
     const targetPath = path.resolve(basePath, file);
 
     // if (!targetPath.startsWith(basePath)) {
